@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         inputMethodManager.hideSoftInputFromWindow(whether.getWindowToken(), 0);
         String city = whether.getText().toString();
         TextView textView = (TextView)findViewById(R.id.Weather);
-        textView.setText(city +"\n\n");
+        textView.setText(city +"\n\n\n");
         whether.setText("");
         Download_Weather download_weather = new Download_Weather();
         download_weather.execute("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=2faf2e6f27ab69a4388bc0eb9a932ce9");
